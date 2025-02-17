@@ -1,0 +1,112 @@
+.containerAppointment {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 12px; 
+}
+
+.appointmentCard {
+  background-color: #ffe4e9; 
+  border: 2px solid #ff99b9; 
+  border-radius: 8px; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px; 
+  margin: 6px; 
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(30% - 20px); 
+  text-align: center; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-width: 180px; 
+}
+
+.appointmentCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.appointmentImage {
+  width: 50%; 
+  margin-bottom: 8px; 
+  border-radius: 5px; 
+}
+
+.appointmentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ff99b9; 
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.appointmentHeader h3 {
+  font-size: 1rem; 
+  color: #cc3366; 
+  margin: 0;
+}
+
+.statusActive {
+  background-color: #ccffcc; 
+  color: #006600; 
+  padding: 3px 6px; 
+  border-radius: 5px;
+  font-size: 0.8rem; 
+  font-weight: bold;
+}
+
+.statusInactive {
+  background-color: #ffc2c2; 
+  color: #990000; 
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.appointmentDetails p {
+  font-size: 0.8rem; 
+  margin: 3px 0;
+}
+
+.appointmentDetails strong {
+  color: #cc3366;
+}
+
+.appointmentDetails span {
+  margin-left: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo adicional para el botón de cancelar */
+.cancelButton {
+  background-color: #ff3366; 
+  color: white; 
+  font-size: 0.9rem; 
+  border: none; 
+  padding: 8px 12px; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.cancelButton:hover {
+  background-color: #ff1a4d;
+}
+
+.cancelButton:disabled {
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+
+.disable {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+

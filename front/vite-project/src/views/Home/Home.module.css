@@ -1,0 +1,82 @@
+/* Estilo general del contenedor */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: #ffe4e9; /* Fondo rosado claro */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Título de bienvenida */
+  .welcomeTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #cc3366; /* Rosa oscuro */
+    margin-bottom: 20px;
+  }
+  
+  /* Mensaje de bienvenida */
+  .welcomeMessage {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para el enlace */
+  .link {
+    color: #cc3366; /* Rosa oscuro */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #ff99b9; /* Rosa claro */
+    transform: scale(1.1); /* Efecto de ampliación */
+  }
+  
+  /* Contenedor para servicios */
+  .servicesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Tarjetas de servicio */
+  .serviceCard {
+    width: 200px;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #cc3366;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .serviceCard:hover {
+    transform: scale(1.05); /* Efecto de ampliación */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  }
+  
+  /* Título del servicio */
+  .serviceTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #cc3366;
+    margin-bottom: 10px;
+  }
+  
+  /* Descripción del servicio */
+  .serviceDescription {
+    font-size: 1rem;
+    color: #555;
+  }
+  

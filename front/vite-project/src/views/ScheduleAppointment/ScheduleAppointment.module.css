@@ -1,0 +1,116 @@
+.registerForm {
+    background-color: #ffe4e9; 
+    border: 2px solid #ff99b9; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px; 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registerForm h2 {
+    font-size: 2rem;
+    color: #cc3366; 
+    text-align: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+  .registerForm input {
+    width: 95%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #ff99b9;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .registerForm input:focus {
+    outline: none;
+    border-color: #cc3366; 
+  }
+  
+  .registerForm input[type="submit"] {
+    background-color: #cc3366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registerForm input[type="submit"]:hover {
+    background-color: #b32d59; 
+  }
+  
+  
+  .errorMessage {
+    color: #990000; 
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .fieldContainer {
+    margin-bottom: 15px;
+  }
+  
+  
+  .registerForm label {
+    font-size: 1rem;
+    color: #cc3366; 
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  
+  .responseMessage {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+
+.registerForm .buttonContainer {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+
+.registerForm button {
+  background-color: #cc3366; 
+  color: white;
+  border: 2px solid #ff99b9; 
+  border-radius: 25px; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 25px; 
+  cursor: pointer;
+  text-transform: uppercase; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+  width: auto; 
+}
+
+
+.registerForm button:hover {
+  background-color: #b32d59; 
+  transform: translateY(-3px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
+.registerForm button:active {
+  transform: translateY(1px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}

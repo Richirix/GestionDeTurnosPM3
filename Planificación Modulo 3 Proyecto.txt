@@ -1,0 +1,126 @@
+﻿Tipo de Proyecto: Gestión de Turnos para el Salón de Belleza "C-A-T-A-R-S-I-S"
+El sistema permitirá a los usuarios gestionar turnos para recibir servicios en el salón de belleza "C-A-T-A-R-S-I-S". Los usuarios podrán interactuar con el sistema a través de una interfaz FrontEnd, autenticarse, reservar turnos, y gestionar su cuenta.
+________________
+
+
+Objetivos del Proyecto
+1. Definir un establecimiento: El proyecto se centra en el salón de belleza "C-A-T-A-R-S-I-S".
+2. Autenticación obligatoria: Solo los usuarios autenticados podrán reservar turnos, sin posibilidad de hacerlo como invitados.
+3. Capacidad ilimitada: Suponemos que el establecimiento puede atender a un número ilimitado de usuarios en cualquier horario, sin conflictos de recursos.
+4. Cancelación de turnos: Los usuarios podrán cancelar turnos, pero solo hasta el día anterior a la fecha de la reserva.
+5. Sin reprogramación de turnos: No se incluirá la función de reprogramar un turno ya reservado.
+6. Extras Opcionales:
+   * Enviar confirmación por email después de reservar o cancelar un turno.
+   * Permitir que el usuario cargue una foto de perfil.
+________________
+
+
+User Stories
+Como usuario invitado
+*Registro: 
+-El usuario debe poder acceder al formulario de registro.
+-El sistema debe validar campos obligatorios como nombre, email y contraseña.
+Criterio de aceptación: 
+        -El usuario debe poder acceder al formulario de registro
+        -El sistema debe validar campos obligatorios como email y contraseña.
+Como usuario registrado
+*Inicio de sesión:
+-Quiero poder iniciar sesión con mis credenciales,
+-Para acceder a mi cuenta y realizar reservas.
+Criterio de aceptación:
+        -El usuario debe ingresar su email y contraseña para acceder.
+-El sistema muestra un mensaje de error si las credenciales son incorrectas.
+-Tras iniciar sesión, el usuario es dirigido a su página de perfil o servicios.
+*Navegación en la página:
+-Quiero poder navegar por la página de servicios del salón,
+-Para explorar las opciones disponibles y visualizar la que mejor se adapte a mis necesidades.
+Criterio de aceptación:
+        -El usuario debe ver un menú de navegación claro.
+        -El usuario debe visualizar claro el contenido
+
+
+
+
+
+
+
+
+*Visualización de servicios:
+-Quiero ver una lista de los servicios que ofrece el salón,
+-Para decidir qué servicio quiero reservar.
+Criterio de aceptación:
+        -El usuario puede ver una lista de todos los servicios disponibles.
+-Cada servicio debe mostrar su nombre, descripción y precio.
+
+
+*Reserva de turno:
+-Quiero poder reservar un turno seleccionando el servicio, la fecha y la hora,dentro del horario de servicio (8am - 8pm).
+-Para asegurarse de recibir atención en el momento que prefiera.
+-Quiero que los días de fin de semana no estén disponibles para agendar turnos, para que solo se pueda reservar en días hábiles.
+Criterio de aceptación:
+        -El usuario solo puede seleccionar horarios entre 8am y 6pm, excluyendo fines de semana. 
+-Si intenta agendar un turno fuera de esos días u horas, se mostrará un mensaje de error.
+-El usuario recibe una confirmación de que el turno ha sido reservado
+-Los sábados y domingos no deben aparecer como opciones en el calendario de reserva. 
+*Cierre de sesión:
+-Quiero poder cerrar sesión en mi cuenta desde cualquier página del sistema,
+-Para proteger la seguridad de mi cuenta cuando termine de usar el sistema.
+Criterio de aceptación:
+        -El usuario debe poder cerrar sesión desde cualquier página del sistema.
+-El sistema redirige al usuario a la página de inicio después de cerrar sesión.
+
+
+
+
+
+
+
+
+*Visualización de historial de turnos:
+-Quiero ver un historial de mis turnos reservados (incluidos los cancelados),
+-Para tener un registro de mis citas pasadas y futuras.
+Criterio de aceptación:
+        -El usuario debe ver un listado de sus turnos pasados, futuros y cancelados.
+-Cada entrada muestra el servicio reservado, la fecha y el estado
+
+
+*Cancelación de turno:
+-Quiero poder cancelar un turno hasta el día anterior a la reserva,
+-Para liberar el horario si no podré asistir.
+Criterio de aceptación:
+        -El usuario debe poder cancelar un turno hasta el día anterior a la cita. 
+-No podrá cancelar el turno el mismo día de la cita. 
+-Al cancelar, el turno desaparece de la lista de turnos futuros.
+
+
+Extras Opcionales
+*Confirmación de turno por email:
+-Quiero recibir una confirmación por email cada vez que reservo un turno,
+-Para asegurarme de que mi cita está confirmada.
+Criterios de Aceptación:
+-El sistema envía un email de confirmación tras cada reserva de turno.
+-El email contiene los detalles del turno reservado, como servicio, fecha y hora.
+
+
+
+
+
+
+
+
+
+
+*Notificación de cancelación:
+-Quiero recibir una confirmación por email cuando cancelo un turno,
+-Para saber que el turno fue cancelado correctamente.
+Criterios de Aceptación:
+-El sistema envía un email de confirmación cuando el usuario cancela un turno.
+-El email indica que el turno fue cancelado correctamente.
+
+
+*Subir foto de perfil:
+-Quiero poder cargar una foto de perfil en mi cuenta,
+-Para personalizar mi cuenta y facilitar la identificación en el salón.
+Criterios de Aceptación:
+-El usuario puede cargar una imagen desde su dispositivo.
+-La imagen de perfil se guarda y aparece en la página de perfil del usuario.
